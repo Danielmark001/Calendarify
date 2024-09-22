@@ -4,67 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Smart Scheduler - Motion</title>
+    <title>Smart Scheduler Calendar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Motion Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#about">About Us</a></li>
-                </ul>
-            </nav>
-            <a href="#signup" class="cta-btn">Get Started</a>
+        <div class="logo">
+            <img src="logo.png" alt="Smart Scheduler Logo">
+            <span>SmartScheduler</span>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timetable">Schedule</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <div class="announcement-bar">
+        New feature alert! Now with AI-powered scheduling and automatic rescheduling. <a href="#">Learn more here</a>.
+    </div>
+
     <section class="hero">
-        <div class="hero-content">
-            <h1>Master Your Time with AI-Powered Scheduling</h1>
-            <p>Stay on top of your tasks, meetings, and goals with Motion's smart calendar.</p>
-            <form id="signup-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Start for Free</button>
-            </form>
+        <h1>Smart Scheduling. Simplified. <span>📅</span></h1>
+        <p>Experience hassle-free scheduling with AI-driven time management <span>🤖</span></p>
+        <button>Start Scheduling</button>
+    </section>
+
+    <section id="timetable" class="timetable">
+        <h2>Your Smart Calendar</h2>
+        <div class="week">
+            <div class="day">
+                <div class="event purple">Meeting<br>10:00 AM</div>
+                <div class="event blue">Project Deadline<br>2:00 PM</div>
+            </div>
+            <div class="day">
+                <div class="event green">Team Sync<br>1:00 PM</div>
+            </div>
+            <!-- Add more days/events as needed -->
         </div>
     </section>
 
     <section id="features" class="features">
-        <div class="container">
-            <h2>Why Choose Motion?</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Smart Task Management</h3>
-                    <p>Automatically prioritize tasks based on deadlines and your schedule.</p>
-                </div>
-                <div class="card">
-                    <h3>AI-Powered Scheduling</h3>
-                    <p>Let AI optimize your calendar for meetings, work sessions, and breaks.</p>
-                </div>
-                <div class="card">
-                    <h3>Seamless Integrations</h3>
-                    <p>Sync with Google Calendar, Outlook, and all your favorite apps.</p>
-                </div>
+        <h2>Why Choose SmartScheduler?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>AI-Powered Scheduling</h3>
+                <p>Automatically find the best times for meetings, tasks, and appointments.</p>
+            </div>
+            <div class="feature">
+                <h3>Time Optimization</h3>
+                <p>Maximize productivity by letting the AI manage your time blocks and avoid conflicts.</p>
+            </div>
+            <div class="feature">
+                <h3>Seamless Integration</h3>
+                <p>Sync with Google Calendar, Outlook, and more to stay on top of your schedule.</p>
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-            </div>
-            <p>&copy; 2024 Motion. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
