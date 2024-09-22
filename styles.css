@@ -2208,7 +2208,7 @@ h1 {
     letter-spacing: -.02em;
     margin-top: 0;
     margin-bottom: 24px;
-    font-family: Arial,sans-serif;
+    font-family: Albert Sans,sans-serif;
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.2
@@ -2601,7 +2601,7 @@ figcaption {
     display: flex
 }
 
-.Calendarify-nav {
+.motion-nav {
     align-items: center;
     width: 100%;
     height: 64px;
@@ -2612,7 +2612,7 @@ figcaption {
     overflow: scroll
 }
 
-.Calendarify-nav.m-nav {
+.motion-nav.m-nav {
     color: #fff;
     background-color: #000;
     justify-content: space-between;
@@ -2660,7 +2660,7 @@ figcaption {
     font-size: 18px
 }
 
-.Calendarify-footer {
+.motion-footer {
     background-color: #f1f2fa;
     flex-direction: column;
     justify-content: space-around;
@@ -2672,7 +2672,7 @@ figcaption {
     display: flex
 }
 
-.Calendarify-footer.pricing-page {
+.motion-footer.pricing-page {
     background-color: #000;
     margin-top: 0
 }
@@ -2744,7 +2744,7 @@ figcaption {
     font-family: Nunito
 }
 
-.Calendarify-nav-bound {
+.motion-nav-bound {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -2866,7 +2866,7 @@ figcaption {
     width: 100px
 }
 
-.zoom-oauth-image.Calendarify-oauth-image {
+.zoom-oauth-image.motion-oauth-image {
     width: 110px
 }
 
@@ -2981,7 +2981,7 @@ figcaption {
     position: fixed
 }
 
-.Calendarify-modal {
+.motion-modal {
     background-color: #202020;
     border-radius: 16px;
     width: 361px;
@@ -2993,7 +2993,7 @@ figcaption {
     box-shadow: 0 0 24px #00000040
 }
 
-.Calendarify-modal.payment-modal {
+.motion-modal.payment-modal {
     flex-direction: column;
     align-items: center;
     display: flex
@@ -3016,7 +3016,7 @@ figcaption {
     line-height: 16px
 }
 
-.Calendarify-stripe-embed {
+.motion-stripe-embed {
     width: 100%;
     height: 45px;
     margin-top: 8px;
@@ -3025,7 +3025,7 @@ figcaption {
     padding-right: 0
 }
 
-.Calendarify-modal-inner {
+.motion-modal-inner {
     flex-direction: column;
     align-items: center;
     width: auto;
@@ -3050,13 +3050,13 @@ figcaption {
     display: block
 }
 
-.Calendarify-title {
+.motion-title {
     color: #fff;
     margin-left: 5px;
     font-size: 22px
 }
 
-.Calendarify-title.new {
+.motion-title.new {
     color: #000;
     letter-spacing: -.7px;
     margin-left: 12px;
@@ -3213,7 +3213,7 @@ figcaption {
     width: auto
 }
 
-.Calendarifylogo {
+.motionlogo {
     width: 150px
 }
 
@@ -5267,7 +5267,7 @@ figcaption {
     height: 100%
 }
 
-.home-comparison_item.home-comparison_item-gradient-new-way.hoox-comparison__Calendarify-padding {
+.home-comparison_item.home-comparison_item-gradient-new-way.hoox-comparison__motion-padding {
     padding: 18px 40px
 }
 
@@ -5604,7 +5604,7 @@ figcaption {
     padding: 2px
 }
 
-.home-comparison_gradient-border.hoox-comparison-Calendarify {
+.home-comparison_gradient-border.hoox-comparison-motion {
     background-image: linear-gradient(139deg,#ffd1cc,#f4769c 26%,#ce5fd2 53%,#9e7edc 80%,#6b9ee9);
     min-width: 40%;
     max-width: 550px;
@@ -10191,11 +10191,11 @@ figcaption {
     box-shadow: 0 2px 24px #8f44ca1f
 }
 
-.lp-siri-email-Calendarify-ai-image {
+.lp-siri-email-motion-ai-image {
     width: 32px
 }
 
-.Calendarify-ai-text {
+.motion-ai-text {
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(#a76cd6,#7d26c1);
     -webkit-background-clip: text;
@@ -10757,20 +10757,20 @@ figcaption {
     font-weight: 600
 }
 
-.compare-why-Calendarify_section {
+.compare-why-motion_section {
     background-color: var(--lp-primary-light);
     padding-top: 80px;
     padding-bottom: 80px
 }
 
-.compare-why-Calendarify_component {
+.compare-why-motion_component {
     grid-column-gap: 48px;
     grid-row-gap: 48px;
     flex-flow: column;
     display: flex
 }
 
-.why-Calendarify_features {
+.why-motion_features {
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     grid-template-rows: auto;
@@ -10825,16 +10825,16 @@ figcaption {
     align-items: center
 }
 
-.compare-table_cell.center.Calendarify {
+.compare-table_cell.center.motion {
     background-color: #e7efff
 }
 
-.compare-table_cell.center.Calendarify.last {
+.compare-table_cell.center.motion.last {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px
 }
 
-.compare-table_cell.center.Calendarify.first {
+.compare-table_cell.center.motion.first {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px
 }
@@ -11234,7 +11234,7 @@ figcaption {
         padding: 20px 8%
     }
 
-    .compare-table_cell.center.Calendarify {
+    .compare-table_cell.center.motion {
         background-color: #e7efff80
     }
 
@@ -11552,7 +11552,7 @@ figcaption {
         padding-left: 0
     }
 
-    .home-comparison_gradient-border.hoox-comparison-Calendarify {
+    .home-comparison_gradient-border.hoox-comparison-motion {
         min-width: 550px;
         margin-right: 40px
     }
@@ -11752,7 +11752,7 @@ figcaption {
         margin-top: 20px
     }
 
-    .Calendarify-nav-bound {
+    .motion-nav-bound {
         min-width: auto
     }
 
@@ -12239,7 +12239,7 @@ figcaption {
         margin-top: 24px
     }
 
-    .home-comparison_gradient-border.hoox-comparison-Calendarify {
+    .home-comparison_gradient-border.hoox-comparison-motion {
         min-width: 40%;
         max-width: 50%;
         margin-right: 20px
@@ -13266,7 +13266,7 @@ figcaption {
         display: none
     }
 
-    .why-Calendarify_features {
+    .why-motion_features {
         grid-column-gap: 24px;
         grid-row-gap: 24px;
         grid-template-columns: 1fr
@@ -13342,7 +13342,7 @@ figcaption {
         font-size: 16px
     }
 
-    .Calendarify-footer {
+    .motion-footer {
         margin-top: 60px
     }
 
@@ -13408,7 +13408,7 @@ figcaption {
         align-items: center
     }
 
-    .Calendarifylogo {
+    .motionlogo {
         display: none
     }
 
@@ -14242,12 +14242,12 @@ figcaption {
         grid-column-gap: 24px
     }
 
-    .lp-siri-email-Calendarify-ai-image {
+    .lp-siri-email-motion-ai-image {
         width: 24px;
         height: 24px
     }
 
-    .Calendarify-ai-text {
+    .motion-ai-text {
         font-size: 16px
     }
 
@@ -14333,7 +14333,7 @@ figcaption {
         line-height: 1.35
     }
 
-    .Calendarify-nav {
+    .motion-nav {
         padding-left: 12px
     }
 
@@ -14345,7 +14345,7 @@ figcaption {
         height: 60px
     }
 
-    .Calendarify-nav-bound {
+    .motion-nav-bound {
         margin-bottom: 20px
     }
 
@@ -14359,11 +14359,11 @@ figcaption {
         padding-right: 0
     }
 
-    .Calendarify-title {
+    .motion-title {
         font-size: 16px
     }
 
-    .Calendarify-title.new {
+    .motion-title.new {
         display: none
     }
 
@@ -14647,7 +14647,7 @@ figcaption {
         padding-right: 20px
     }
 
-    .home-comparison_item.home-comparison_item-gradient-new-way.hoox-comparison__Calendarify-padding {
+    .home-comparison_item.home-comparison_item-gradient-new-way.hoox-comparison__motion-padding {
         min-height: 766px;
         padding-left: 20px;
         padding-right: 20px
@@ -14742,7 +14742,7 @@ figcaption {
         grid-template-columns: 1fr
     }
 
-    .home-comparison_gradient-border.hoox-comparison-Calendarify {
+    .home-comparison_gradient-border.hoox-comparison-motion {
         min-width: 320px;
         max-width: 320px;
         min-height: 768px;
