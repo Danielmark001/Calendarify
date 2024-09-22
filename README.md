@@ -1,1 +1,1 @@
-# SmartSchedulerAI
+# Calendarify
