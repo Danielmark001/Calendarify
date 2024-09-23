@@ -1,13 +1,4 @@
-// Basic interactivity for the form
-document.getElementById('signup-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = document.querySelector('input[type="email"]').value;
-    if (email) {
-        alert(`Thank you for signing up with ${email}!`);
-    } else {
-        alert('Please enter a valid email address.');
-    }
-});
+// Purpose: To create a calendarify website for NTU students
 <!DOCTYPE html>
 <html
   data-wf-domain="calendarify-ntu.vercel.app"
@@ -354,7 +345,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
        
              </nav>
           </div>
-          <a href="/timetable class="nav-link w-inline-block"><div>Timetable</div></a
+          <a href="/timetable" class="nav-link w-inline-block"><div>Timetable</div></a>
     
           ><a
             href="/about"
