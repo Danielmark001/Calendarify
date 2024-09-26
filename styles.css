@@ -17559,3 +17559,786 @@ p.is-editor-empty:first-child:before {
     height: 0;
     pointer-events: none
 }
+element.style {
+}
+.pt-8 {
+    padding-top: 32px;
+}
+.pb-16 {
+    padding-bottom: 64px;
+}
+.px-6 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.bg-semantic-neutral-bg-default {
+    background-color: var(--motion-semantic-neutral-bg-default);
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.w-full {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+@supports (scrollbar-color: var(--motion-primitives-neutral-600) transparent) {
+    * {
+        scrollbar-color: var(--motion-primitives-neutral-800) transparent;
+    }
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+body {
+    --fc-bg-event-opacity: 1;
+    --fc-event-bg-color: transparent;
+    --fc-event-border-color: transparent;
+    --fc-page-bg-color: transparent;
+    --fc-event-selected-overlay-color: transparent;
+    --fc-now-indicator-color: transparent;
+    --fc-border-color: var(--motion-semantic-neutral-border-light);
+    --fc-today-bg-color: var(--motion-calendar-bg-default);
+    --fc-bg-event-color: transparent;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+    line-height: inherit;
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+:root {
+    --motion-theme: null;
+}
+<style>
+:root {
+    --fc-daygrid-event-dot-width: 8px;
+}
+<style>
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: hsla(0, 0%, 82%, .3);
+    --fc-neutral-text-color: grey;
+    --fc-border-color: #ddd;
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #2c3e50;
+    --fc-button-border-color: #2c3e50;
+    --fc-button-hover-bg-color: #1e2b37;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;
+    --fc-event-bg-color: #3788d8;
+    --fc-event-border-color: #3788d8;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, .25);
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+    --fc-non-business-color: hsla(0, 0%, 84%, .3);
+    --fc-bg-event-color: #8fdf82;
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, .3);
+    --fc-today-bg-color: rgba(255, 220, 40, .15);
+    --fc-now-indicator-color: red;
+}
+html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "sans-serif";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+element.style {
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.flex-col {
+    flex-direction: column;
+}
+.h-full {
+    height: 100%;
+}
+.flex {
+    display: flex;
+}
+@supports (scrollbar-color: var(--motion-primitives-neutral-600) transparent) {
+    * {
+        scrollbar-color: var(--motion-primitives-neutral-800) transparent;
+    }
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+style attribute {
+    position: relative;
+    user-select: auto;
+    margin-left: 0px;
+    width: 240px;
+    height: 100%;
+    max-width: 350px;
+    max-height: 100%;
+    min-width: 220px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+#motion-web-root {
+    font-size: 14px;
+    color: var(--motion-semantic-neutral-text-default);
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+body {
+    --fc-bg-event-opacity: 1;
+    --fc-event-bg-color: transparent;
+    --fc-event-border-color: transparent;
+    --fc-page-bg-color: transparent;
+    --fc-event-selected-overlay-color: transparent;
+    --fc-now-indicator-color: transparent;
+    --fc-border-color: var(--motion-semantic-neutral-border-light);
+    --fc-today-bg-color: var(--motion-calendar-bg-default);
+    --fc-bg-event-color: transparent;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+    line-height: inherit;
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+:root {
+    --motion-theme: null;
+}
+<style>
+:root {
+    --fc-daygrid-event-dot-width: 8px;
+}
+<style>
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: hsla(0, 0%, 82%, .3);
+    --fc-neutral-text-color: grey;
+    --fc-border-color: #ddd;
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #2c3e50;
+    --fc-button-border-color: #2c3e50;
+    --fc-button-hover-bg-color: #1e2b37;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;
+    --fc-event-bg-color: #3788d8;
+    --fc-event-border-color: #3788d8;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, .25);
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+    --fc-non-business-color: hsla(0, 0%, 84%, .3);
+    --fc-bg-event-color: #8fdf82;
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, .3);
+    --fc-today-bg-color: rgba(255, 220, 40, .15);
+    --fc-now-indicator-color: red;
+}
+html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "sans-serif";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+element.style {
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.flex-col {
+    flex-direction: column;
+}
+.h-full {
+    height: 100%;
+}
+.flex {
+    display: flex;
+}
+@supports (scrollbar-color: var(--motion-primitives-neutral-600) transparent) {
+    * {
+        scrollbar-color: var(--motion-primitives-neutral-800) transparent;
+    }
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+style attribute {
+    position: relative;
+    user-select: auto;
+    margin-left: 0px;
+    width: 240px;
+    height: 100%;
+    max-width: 350px;
+    max-height: 100%;
+    min-width: 220px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+#motion-web-root {
+    font-size: 14px;
+    color: var(--motion-semantic-neutral-text-default);
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+body {
+    --fc-bg-event-opacity: 1;
+    --fc-event-bg-color: transparent;
+    --fc-event-border-color: transparent;
+    --fc-page-bg-color: transparent;
+    --fc-event-selected-overlay-color: transparent;
+    --fc-now-indicator-color: transparent;
+    --fc-border-color: var(--motion-semantic-neutral-border-light);
+    --fc-today-bg-color: var(--motion-calendar-bg-default);
+    --fc-bg-event-color: transparent;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+    line-height: inherit;
+}
+body, [data-theme="light"] {
+    --loading-bg: var(--motion-semantic-neutral-bg-disabled, rgb(249, 250, 251));
+    --loading-fg-title: #11181c;
+    --loading-fg-sub: rgb(116 116 133);
+}
+:root, [data-theme=light] {
+    --motion-theme: light;
+    --motion-palette-highlight-subtle: hsl(0 var(--motion-palette-highlight-subtle));
+    --motion-palette-highlight-default: hsl(0 var(--motion-palette-highlight-default));
+    --motion-palette-stripe-default: hsl(0 var(--motion-palette-stripe-default));
+    --motion-palette-text-selected: hsl(0 var(--motion-palette-text-selected));
+    --motion-palette-text-default: hsl(0 var(--motion-palette-text-default));
+    --motion-palette-bg-hover: hsl(0 var(--motion-palette-bg-hover));
+    --motion-palette-bg-selected: hsl(0 var(--motion-palette-bg-selected));
+    --motion-palette-bg-default: hsl(0 var(--motion-palette-bg-default));
+    --motion-palette-bg-lightest: hsl(0 var(--motion-palette-bg-lightest));
+    --motion-palette-bg-light: hsl(0 var(--motion-palette-bg-light));
+    --motion-palette-1000-gray: 0% 10%;
+    --motion-palette-1000-default: 90% 10%;
+    --motion-palette-900-gray: 0% 15%;
+    --motion-palette-900-default: 80% 15%;
+    --motion-palette-800-gray: 0% 25%;
+    --motion-palette-800-default: 80% 25%;
+    --motion-palette-700-gray: 0% 35%;
+    --motion-palette-700-default: 70% 35%;
+    --motion-palette-600-gray: 0% 40%;
+    --motion-palette-600-default: 70% 40%;
+    --motion-palette-500-gray: 0% 55%;
+    --motion-palette-500-default: 70% 55%;
+    --motion-palette-400-gray: 0% 75%;
+    --motion-palette-400-default: 70% 75%;
+    --motion-palette-300-gray: 0% 85%;
+    --motion-palette-300-default: 60% 85%;
+    --motion-palette-200-gray: 0% 90%;
+    --motion-palette-200-default: 60% 90%;
+    --motion-palette-100-gray: 0 95%;
+    --motion-palette-100-default: 50% 95%;
+    --motion-palette-50-gray: 0 98%;
+    --motion-palette-50-default: 40% 98%;
+    --motion-icon-gradient-shade-dark: rgb(154, 173, 236);
+    --motion-icon-gradient-shade-medium: rgb(202, 212, 244);
+    --motion-icon-gradient-shade-light: rgb(246, 249, 255);
+    --motion-icon-gradient-bg-bottom: rgb(61, 97, 221);
+    --motion-icon-gradient-bg-top: rgb(132, 155, 229);
+    --motion-keyboardShortcut-onWarning-bg: rgba(0, 0, 0, .1);
+    --motion-keyboardShortcut-warning-bg: rgba(255, 178, 36, .15);
+    --motion-keyboardShortcut-error-bg: rgba(229, 72, 77, .15);
+    --motion-keyboardShortcut-primary-bg: rgba(60, 97, 221, .1);
+    --motion-keyboardShortcut-onDark-text: rgba(255, 255, 255, .9);
+    --motion-keyboardShortcut-onDark-bg: rgba(255, 255, 255, .15);
+    --motion-keyboardShortcut-default-bg: rgba(0, 0, 0, .05);
+    --motion-toast-loading-bg: rgba(255, 255, 255, .15);
+    --motion-modal-overlay: rgba(0, 0, 0, .5);
+    --motion-button-on-dark-muted-icon-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-text-disabled: rgba(255, 255, 255, .5);
+    --motion-button-on-dark-muted-bg-pressed: rgba(255, 255, 255, .2);
+Show all properties (1018 more)
+}
+:root {
+    --motion-theme: null;
+}
+<style>
+:root {
+    --fc-daygrid-event-dot-width: 8px;
+}
+<style>
+:root {
+    --fc-small-font-size: .85em;
+    --fc-page-bg-color: #fff;
+    --fc-neutral-bg-color: hsla(0, 0%, 82%, .3);
+    --fc-neutral-text-color: grey;
+    --fc-border-color: #ddd;
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #2c3e50;
+    --fc-button-border-color: #2c3e50;
+    --fc-button-hover-bg-color: #1e2b37;
+    --fc-button-hover-border-color: #1a252f;
+    --fc-button-active-bg-color: #1a252f;
+    --fc-button-active-border-color: #151e27;
+    --fc-event-bg-color: #3788d8;
+    --fc-event-border-color: #3788d8;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: rgba(0, 0, 0, .25);
+    --fc-more-link-bg-color: #d0d0d0;
+    --fc-more-link-text-color: inherit;
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+    --fc-non-business-color: hsla(0, 0%, 84%, .3);
+    --fc-bg-event-color: #8fdf82;
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, .3);
+    --fc-today-bg-color: rgba(255, 220, 40, .15);
+    --fc-now-indicator-color: red;
+}
+html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, "sans-serif";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+:before, :after {
+    --tw-content: "";
+}
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}

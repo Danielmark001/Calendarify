@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://app.usemotion.com/favicon.ico" rel="icon" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#000000" name="theme-color" />
+    <meta content="Motion" name="description" />
+    <meta property="og:title" content="Motion Tasks and Scheduling" />
+    <meta
+      property="og:description"
+      content="The app that uses AI to help you get 25% more done."
+    />
+    <meta
+      property="og:image"
+      content="https://uploads-ssl.webflow.com/5fcb349058268443b1f5dbdb/6545926009197107868c5038_preview_og_img.png"
+    />
+    <script>
+      window._timings = {};
+      window._timings.initialPath = window.location.pathname;
+      if (document.location.pathname.startsWith("/web")) {
+        window._timings.htmlStart = performance.now();
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=default%2CIntl.DateTimeFormat%2CIntl.ListFormat%2CIntl.NumberFormat%2CIntl.PluralRules%2Ces2022%2Ces2023%2CstructuredClone"></script>
+    <meta name="twitter:site" content="@useMotion" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="google-site-verification"
+      content="_H4CSXmqZw4QM_DjxQ07NXlOpOpUjOpm7akNLJy1LnI"
+    />
+    <link
+      href="https://app.usemotion.com/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+    <link
+      href="https://app.usemotion.com/apple-touch-icon.png"
+      rel="apple-touch-icon-precomposed"
+    />
+    <link href="https://app.usemotion.com/apple-touch-icon.png" rel="icon" />
+
+    <link href="https://app.usemotion.com/manifest.json" rel="manifest" />
+    <link
+      rel="apple-app-site-association file"
+      href="https://app.usemotion.com/.well-known/apple-developer-merchantid-domain-association"
+    />
+    <title>Motion</title>
+    <style>
+      body,
+      [data-theme="light"] {
+        --loading-bg: var(
+          --motion-semantic-neutral-bg-disabled,
+          rgb(249, 250, 251)
+        );
+        --loading-fg-title: #11181c;
+        --loading-fg-sub: rgb(116 116 133);
+      }
+
+      .static-loading {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: var(--loading-bg);
+        padding: 24px;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+          Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      }
+      .static-loading-inner {
+        align-items: center;
+        gap: 16px;
+        display: flex;
+        max-width: 600px;
+      }
+      .static-loading h2 {
+        color: var(--loading-fg-title);
+        margin: 0;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .static-loading h3 {
+        color: var(--loading-fg-sub);
+        margin: 0;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+      }
+      .spin {
+        display: inline-block;
+        animation: static-loading-spin 1s linear infinite;
+        transform-origin: center;
+      }
+      .spin path {
+        stroke: var(--loading-fg-title);
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      @keyframes static-loading-spin {
+        to {
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      body.dark,
+      [data-theme="dark"] {
+        --loading-bg: var(
+          --motion-semantic-neutral-bg-disabled,
+          rgb(26, 29, 30)
+        );
+        --loading-fg-title: white;
+        --loading-fg-sub: var(
+          --motion-semantic-neutral-icon-default,
+          rgb(120, 127, 133)
+        );
+      }
+    </style>
+    <script>
+      !(function () {
+        const getCookieValue = (name) =>
+          document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")?.pop();
+        let mot_session = getCookieValue("mot_session");
+        if (!mot_session) {
+          // uuidv4
+          mot_session = ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(
+            /[018]/g,
+            (c) =>
+              (
+                c ^
+                (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
+              ).toString(16)
+          );
+          domain = window.location.hostname.endsWith("usemotion.com")
+            ? ";domain=usemotion.com"
+            : "";
+          document.cookie = `mot_session=${mot_session}${domain}`;
+        }
+        if (
+          window.location.pathname === "/" ||
+          window.location.pathname.startsWith("/web") ||
+          window.location.pathname.startsWith("/meet/")
+        ) {
+          window.analytics = [];
+          window.analytics.initialize = undefined;
+          window.analytics.identify = () => void 0;
+          window.analytics.track = () => void 0;
+          window.analytics.page = () => void 0;
+          return;
+        }
+        let writeKey = window.location.href.startsWith(
+          "https://app.usemotion.com"
+        )
+          ? "WQQU1TebtGFCogK5Ty5V9FnfqdLuSRKS"
+          : "CDoWkXaIAAxZYrjFZYr85W9aaZDitaAu";
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on",
+              "addSourceMiddleware",
+              "addIntegrationMiddleware",
+              "setAnonymousId",
+              "addDestinationMiddleware",
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src = "https://segmentcdn.usemotion.com/snippet/" + key;
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = writeKey;
+            analytics._cdn = "https://segmentcdn.usemotion.com";
+            analytics.SNIPPET_VERSION = "4.15.3";
+            const mot_session = getCookieValue("mot_session");
+            analytics.setAnonymousId(mot_session);
+            analytics.load(writeKey, { integrations: { Hotjar: false } });
+          }
+      })();
+    </script>
+    <script>
+      // prettier-ignore
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/onbboe5h';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+    <script
+      type="module"
+      crossorigin=""
+      src="/20240925_1938_2f20c35d/entry/index_CdJC7kw5.js"
+    ></script>
+    <link
+      rel="modulepreload"
+      crossorigin=""
+      href="/20240925_1938_2f20c35d/chunks/vendor_DB9gy0Kb.js"
+    />
+    <link
+      rel="modulepreload"
+      crossorigin=""
+      href="/20240925_1938_2f20c35d/chunks/motion-lib_IOKVS9rh.js"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="/20240925_1938_2f20c35d/styles/motion-lib_BHsVg5UC.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="/20240925_1938_2f20c35d/styles/index_CKKog_wH.css"
+    />
+    <link
+      rel="modulepreload"
+      href="/20240925_1938_2f20c35d/chunks/webapp_BXWX-uRJ.js"
+    />
+  </head>
+  <body style="margin: 0; background-color: var(--loading-bg)">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="absolute left-0 top-0 w-full h-8 electron-drag"></div>
+      <div id="initial-loading" class="static-loading" style="display: none">
+        <div class="static-loading-inner">
+          <span class="spin">
+            <svg viewBox="-1 -1 12 12" width="30" height="30">
+              <path d="M 5 0 A 5 5 0 0 1 10 5" stroke-width="0.75"></path>
+            </svg>
+          </span>
+          <h2>Preparing Motion...</h2>
+        </div>
+      </div>
+    </div>
+    <script id="initial-loading-script">
+      const listener = (e) => {
+        if (e.animationName !== "static-loading-spin") return;
+        const animation = document
+          .getAnimations()
+          .find((x) => x.animationName === "static-loading-spin");
+        window._animationSync = animation.startTime;
+        document.removeEventListener("animationstart", listener);
+      };
+
+      document.addEventListener("animationstart", listener, true);
+
+      setTimeout(() => {
+        const el = document.getElementById("initial-loading");
+        if (el == null) return;
+        el.style.display = "flex";
+      }, 1000);
+    </script>
+    <script>
+      const path = window.location.pathname;
+      if (path.startsWith("/web") || path === "/") {
+        let theme = window.localStorage.getItem("theme") ?? "light";
+        if (theme === "systemSettings") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        if (theme === "dark") {
+          document.body.classList.add(theme);
+        }
+      }
+    </script>
+  </body>
+</html>
