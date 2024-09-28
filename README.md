@@ -31,9 +31,9 @@ Calendarifty, building the next-generation productivity platform that uses artif
 Contributions are welcome! To contribute to this project:
 
 1. Fork the repository.
-2. Create a new branch (git checkout -b feature/YourFeatureName).
-3. Make your changes and commit them (git commit -m 'Add some feature').
-4. Push to the branch (git push origin feature/YourFeatureName).
+2. Create a new branch (`git checkout -b feature/color-coding-events`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git checkout -b feature/color-coding-events`).
 5. Open a pull request.
    
 Please make sure to update tests as appropriate.
