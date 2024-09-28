@@ -21,3 +21,25 @@ Calendarifty, building the next-generation productivity platform that uses artif
 - **Database**: MongoDB
 - **Styling**: Tailwind CSS
 - **Other**: FullCalendar library for the calendar UI
+
+## Usage
+- Adding an Event: Click on the desired date in the calendar to add an event. Fill in the event details, set reminders if needed, and save.
+- Editing/Deleting an Event: Click on an existing event to edit or delete it.
+- Switch Views: Use the toolbar to switch between daily, weekly, and monthly views.
+
+## Contributing
+Contributions are welcome! To contribute to this project:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/YourFeatureName).
+3. Make your changes and commit them (git commit -m 'Add some feature').
+4. Push to the branch (git push origin feature/YourFeatureName).
+5. Open a pull request.
+   
+Please make sure to update tests as appropriate.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Danielmark001/Calendarify/blob/main/LICENSE) file for more details.
+
+## Contact
+For any questions or support, please open an issue or contact at [danielmark0103@gmail.com](https://mail.google.com/mail/u/danielmark0103@gmail.com/#compose)
