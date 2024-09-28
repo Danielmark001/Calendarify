@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://app.usemotion.com/web/pm/all-tasks/tasks/list -->
+<html lang="en" translate="no">
+  <head>
+    <link rel="stylesheet" href="pm">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="https://app.usemotion.com/favicon.ico" rel="icon" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#000000" name="theme-color" />
+    <meta content="Motion" name="description" />
+    <meta property="og:title" content="Motion Tasks and Scheduling" />
+    <meta
+      property="og:description"
+      content="The app that uses AI to help you get 25% more done."
+    />
+    <meta
+      property="og:image"
+      content="https://uploads-ssl.webflow.com/5fcb349058268443b1f5dbdb/6545926009197107868c5038_preview_og_img.png"
+    />
+    <style data-fullcalendar=""></style>
+    <script type="text/javascript" async="" src="./pm_files/onbboe5h"></script>
+    <script>
+      window._timings = {};
+      window._timings.initialPath = window.location.pathname;
+      if (document.location.pathname.startsWith("/web")) {
+        window._timings.htmlStart = performance.now();
+      }
+    </script>
+    <script src="./pm_files/polyfill.min.js.download"></script>
+    <meta name="twitter:site" content="@useMotion" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="google-site-verification"
+      content="_H4CSXmqZw4QM_DjxQ07NXlOpOpUjOpm7akNLJy1LnI"
+    />
+    <link
+      href="https://app.usemotion.com/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+    <link
+      href="https://app.usemotion.com/apple-touch-icon.png"
+      rel="apple-touch-icon-precomposed"
+    />
+    <link href="https://app.usemotion.com/apple-touch-icon.png" rel="icon" />
+
+    <link href="https://app.usemotion.com/manifest.json" rel="manifest" />
+    <link
+      rel="apple-app-site-association file"
+      href="https://app.usemotion.com/.well-known/apple-developer-merchantid-domain-association"
+    />
+    <title>Motion</title>
+    <style>
+      body,
+      [data-theme="light"] {
+        --loading-bg: var(
+          --motion-semantic-neutral-bg-disabled,
+          rgb(249, 250, 251)
+        );
+        --loading-fg-title: #11181c;
+        --loading-fg-sub: rgb(116 116 133);
+      }
+
+      .static-loading {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: var(--loading-bg);
+        padding: 24px;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+          Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      }
+      .static-loading-inner {
+        align-items: center;
+        gap: 16px;
+        display: flex;
+        max-width: 600px;
+      }
+      .static-loading h2 {
+        color: var(--loading-fg-title);
+        margin: 0;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .static-loading h3 {
+        color: var(--loading-fg-sub);
+        margin: 0;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+      }
+      .spin {
+        display: inline-block;
+        animation: static-loading-spin 1s linear infinite;
+        transform-origin: center;
+      }
+      .spin path {
+        stroke: var(--loading-fg-title);
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      @keyframes static-loading-spin {
+        to {
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      body.dark,
+      [data-theme="dark"] {
+        --loading-bg: var(
+          --motion-semantic-neutral-bg-disabled,
+          rgb(26, 29, 30)
+        );
+        --loading-fg-title: white;
+        --loading-fg-sub: var(
+          --motion-semantic-neutral-icon-default,
+          rgb(120, 127, 133)
+        );
+      }
+    </style>
+    <script>
+      !(function () {
+        const getCookieValue = (name) =>
+          document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")?.pop();
+        let mot_session = getCookieValue("mot_session");
+        if (!mot_session) {
+          // uuidv4
+          mot_session = ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(
+            /[018]/g,
+            (c) =>
+              (
+                c ^
+                (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
+              ).toString(16)
+          );
+          domain = window.location.hostname.endsWith("usemotion.com")
+            ? ";domain=usemotion.com"
+            : "";
+          document.cookie = `mot_session=${mot_session}${domain}`;
+        }
+        if (
+          window.location.pathname === "/" ||
+          window.location.pathname.startsWith("/web") ||
+          window.location.pathname.startsWith("/meet/")
+        ) {
+          window.analytics = [];
+          window.analytics.initialize = undefined;
+          window.analytics.identify = () => void 0;
+          window.analytics.track = () => void 0;
+          window.analytics.page = () => void 0;
+          return;
+        }
+        let writeKey = window.location.href.startsWith(
+          "https://app.usemotion.com"
+        )
+          ? "WQQU1TebtGFCogK5Ty5V9FnfqdLuSRKS"
+          : "CDoWkXaIAAxZYrjFZYr85W9aaZDitaAu";
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on",
+              "addSourceMiddleware",
+              "addIntegrationMiddleware",
+              "setAnonymousId",
+              "addDestinationMiddleware",
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src = "https://segmentcdn.usemotion.com/snippet/" + key;
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = writeKey;
+            analytics._cdn = "https://segmentcdn.usemotion.com";
+            analytics.SNIPPET_VERSION = "4.15.3";
+            const mot_session = getCookieValue("mot_session");
+            analytics.setAnonymousId(mot_session);
+            analytics.load(writeKey, { integrations: { Hotjar: false } });
+          }
+      })();
+    </script>
+    <script>
+      // prettier-ignore
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/onbboe5h';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+    <script
+      type="module"
+      crossorigin=""
+      src="./pm_files/index_CdJC7kw5.js.download"
+    ></script>
+    <link
+      rel="modulepreload"
+      crossorigin=""
+      href="https://app.usemotion.com/20240925_1938_2f20c35d/chunks/vendor_DB9gy0Kb.js"
+    />
+    <link
+      rel="modulepreload"
+      crossorigin=""
+      href="https://app.usemotion.com/20240925_1938_2f20c35d/chunks/motion-lib_IOKVS9rh.js"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="styles.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="styles.css"
+    />
+    <link
+      rel="modulepreload"
+      href="https://app.usemotion.com/20240925_1938_2f20c35d/chunks/webapp_BXWX-uRJ.js"
+    />
+    <script src="./pm_files/v3"></script>
+    <link
+      rel="modulepreload"
+      as="script"
+      crossorigin=""
+      href="https://app.usemotion.com/20240925_1938_2f20c35d/chunks/vendor_charting_EmLKOaKb.js"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./pm_files/index.js.download" type="text/javascript"></script>
+    <script src="./pm_files/web-vitals.iife.js.download"></script>
+  </head>
+  <body style="margin: 0; background-color: var(--loading-bg)">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="contents" data-theme="light">
+        <div
+          class="fill"
+          id="motion-web-root"
+          style="display: flex; flex-direction: column; position: relative"
+        >
+          <header
+            class="flex items-center bg-semantic-neutral-bg-disabled electron-drag"
+            data-testid="top-nav"
+          >
+            <div
+              class="inline-flex gap-3 items-center min-w-[220px] pl-6 pr-1 my-2.5"
+            >
+              <a
+                class="flex gap-3 items-center"
+                href="https://app.usemotion.com/web/calendar"
+                ><img
+                  src="./pm_files/logo_1024_ytUzsKaT.webp"
+                  class="h-9 w-9"
+                  alt="Motion logo"
+                /><span class="text-logo-text text-xl">motion</span></a
+              >
+            </div>
+            <div class="flex flex-grow justify-between pr-3">
+              <div class="flex shrink-0 gap-2 flex-nowrap items-center">
+                <a
+                  class="transition-none relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm px-[11px] py-[7px] [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled]"
+                  href="https://app.usemotion.com/web/calendar"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    data-icon="calendarsolid"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.19998 2.79999C6.19998 2.2477 5.75227 1.79999 5.19998 1.79999C4.6477 1.79999 4.19998 2.2477 4.19998 2.79999V3.59998H4.04999C2.80735 3.59998 1.79999 4.60733 1.79999 5.84997V13.95C1.79999 15.1926 2.80735 16.2 4.04999 16.2H13.95C15.1926 16.2 16.2 15.1926 16.2 13.95V10V5.84998C16.2 4.60733 15.1926 3.59998 13.95 3.59998H13.8V2.79999C13.8 2.2477 13.3523 1.79999 12.8 1.79999C12.2477 1.79999 11.8 2.2477 11.8 2.79999V3.59998H6.19998V2.79999ZM3.29999 8V13.95C3.29999 14.3642 3.63577 14.7 4.04999 14.7H13.95C14.3642 14.7 14.7 14.3642 14.7 13.95V10V8H3.29999Z"
+                      fill="currentColor"
+                    ></path></svg
+                  >Calendar</a
+                ><a
+                  class="transition-none relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-gap=6px] text-sm px-[11px] py-[7px] [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-outlined-text-default] themevar-[b-bg=button-neutral-outlined-bg-default] themevar-[b-icon=button-neutral-outlined-icon-default] themevar-[b-border=button-neutral-outlined-border-default] themevar-[b-bg-hover=button-neutral-outlined-bg-hover] themevar-[b-border-hover=button-neutral-outlined-border-hover] themevar-[b-bg-active=button-neutral-outlined-bg-pressed] themevar-[b-border-active=button-neutral-outlined-border-pressed] themevar-[b-fg-disabled=button-neutral-outlined-text-disabled] themevar-[b-bg-disabled=button-neutral-outlined-bg-disabled] themevar-[b-icon-disabled=button-neutral-outlined-icon-disabled] themevar-[b-border-disabled=button-neutral-outlined-border-disabled]"
+                  href="https://app.usemotion.com/web/pm"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-icon="projectcubesolid"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M9.00002 7.94741L2.45459 5.03833V13.0383L9.00002 16.6747V7.94741Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      opacity="0.24"
+                      d="M15.5 13L8.99994 16.6747V8L15.5 5V13Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      opacity="0.1"
+                      d="M8.77895 7.79775L3 5L9 1.5L15 5L8.77895 7.79775Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.0649 1.43073C8.65354 1.13641 9.34641 1.13641 9.93506 1.43073L14.8441 3.88527C15.5525 4.23945 16 4.96346 16 5.75543V12.2302C16 13.0222 15.5525 13.7462 14.8441 14.1004L9.93506 16.5549C9.34641 16.8492 8.65354 16.8492 8.0649 16.5549L3.15582 14.1004C2.44746 13.7462 2 13.0222 2 12.2302V5.75543C2 4.96346 2.44746 4.23945 3.15582 3.88527L8.0649 1.43073ZM9.36588 2.56909C9.13554 2.45392 8.86442 2.45392 8.63408 2.56909L4.05931 4.85648L8.14621 6.89993C8.68367 7.16866 9.31629 7.16866 9.85375 6.89993L13.9406 4.85648L9.36588 2.56909ZM3.27272 12.2302V5.88613L7.57703 8.03828C7.82903 8.16428 8.09357 8.25483 8.36361 8.30994V15.2813L3.725 12.962C3.44782 12.8234 3.27272 12.5401 3.27272 12.2302ZM9.63633 15.2813L14.275 12.962C14.5521 12.8234 14.7272 12.5401 14.7272 12.2302V5.88613L10.4229 8.03828C10.1709 8.16428 9.90637 8.25484 9.63633 8.30994V15.2813Z"
+                      fill="currentColor"
+                    ></path></svg
+                  >Projects</a
+                ><button
+                  class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm px-[11px] py-[7px] [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled]"
+                  type="button"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-icon="linksolid"
+                  >
+                    <path
+                      d="M11.3272 4.1272C12.0301 3.42425 13.1698 3.42425 13.8728 4.1272C14.5757 4.83014 14.5757 5.96984 13.8728 6.67278L11.1728 9.37278C10.4698 10.0757 9.33012 10.0757 8.62718 9.37278C8.27571 9.02131 7.70586 9.02131 7.35439 9.37278C7.00292 9.72425 7.00292 10.2941 7.35439 10.6456C8.76027 12.0515 11.0397 12.0515 12.4456 10.6456L15.1456 7.94557C16.5514 6.53968 16.5514 4.26029 15.1456 2.8544C13.7397 1.44852 11.4603 1.44852 10.0544 2.8544L8.70439 4.2044C8.35292 4.55588 8.35292 5.12572 8.70439 5.4772C9.05586 5.82867 9.62571 5.82867 9.97718 5.4772L11.3272 4.1272Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M6.8272 8.6272C7.53014 7.92425 8.66984 7.92425 9.37278 8.6272C9.72425 8.97867 10.2941 8.97867 10.6456 8.6272C10.997 8.27572 10.997 7.70587 10.6456 7.3544C9.23968 5.94852 6.96029 5.94852 5.5544 7.3544L2.8544 10.0544C1.44852 11.4603 1.44852 13.7397 2.8544 15.1456C4.26029 16.5515 6.53968 16.5515 7.94557 15.1456L9.29557 13.7956C9.64704 13.4441 9.64704 12.8743 9.29557 12.5228C8.9441 12.1713 8.37425 12.1713 8.02278 12.5228L6.67278 13.8728C5.96984 14.5757 4.83014 14.5757 4.1272 13.8728C3.42425 13.1698 3.42425 12.0301 4.1272 11.3272L6.8272 8.6272Z"
+                      fill="currentColor"
+                    ></path></svg
+                  >Booking</button
+                ><a
+                  class="transition-none relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm px-[11px] py-[7px] [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled]"
+                  href="https://app.usemotion.com/web/tutorials"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-icon="tutorialsolid"
+                  >
+                    <path
+                      opacity="0.5"
+                      d="M1.48694 12.9213V4.2167C1.48694 3.54206 2.14128 3.06099 2.78521 3.26222L8.29826 4.98504C8.71573 5.1155 8.99998 5.50214 8.99998 5.93952V14.6441C8.99998 15.3188 8.34564 15.7998 7.70171 15.5986L2.18866 13.8758C1.77119 13.7453 1.48694 13.3587 1.48694 12.9213Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      opacity="0.25"
+                      d="M15.8113 13.8758L10.2983 15.5986C9.65434 15.7998 9 15.3188 9 14.6441V5.93952C9 5.50214 9.28425 5.1155 9.70172 4.98504L15.2148 3.26222C15.8587 3.06099 16.513 3.54206 16.513 4.2167V12.9213C16.513 13.3587 16.2288 13.7453 15.8113 13.8758Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.43585 2.60682C2.59904 2.5062 2.79979 2.39048 3.00659 2.28005C3.21726 2.16756 3.44342 2.05562 3.64816 1.97008C3.75029 1.92741 3.85513 1.88792 3.95509 1.85822C4.04558 1.83134 4.17219 1.79999 4.30437 1.79999C4.43072 1.79999 4.57678 1.8325 4.68089 1.8576C4.8053 1.88758 4.95516 1.92927 5.12051 1.97805C5.45186 2.0758 5.87248 2.21009 6.32726 2.35648L6.56731 2.43382L6.56733 2.43382L6.56735 2.43383C7.37048 2.69267 8.25727 2.97848 9.00002 3.18665C9.74279 2.97847 10.6296 2.69266 11.4327 2.43382L11.6728 2.35648C12.1276 2.21009 12.5482 2.0758 12.8795 1.97805C13.0449 1.92927 13.1948 1.88758 13.3192 1.8576C13.4233 1.8325 13.5693 1.79999 13.6957 1.79999C13.8279 1.79999 13.9545 1.83134 14.045 1.85822C14.1449 1.88792 14.2498 1.92741 14.3519 1.97008C14.5566 2.05562 14.7828 2.16756 14.9935 2.28005C15.2003 2.39048 15.401 2.5062 15.5642 2.60682C16.3818 2.60013 17.1 3.2608 17.1 4.13392V12.9661C17.1 13.6336 16.6662 14.2236 16.0291 14.4227L9.35794 16.5074C9.23632 16.5454 9.11419 16.55 9 16.5273C8.88582 16.55 8.76368 16.5454 8.64206 16.5074L1.97092 14.4227C1.33381 14.2236 0.900024 13.6336 0.900024 12.9661V4.13392C0.900024 3.26078 1.61823 2.60011 2.43585 2.60682ZM8.41303 5.88981C8.41303 5.89147 8.41302 5.89313 8.41302 5.89479V15.206L2.32107 13.3022C2.17404 13.2563 2.07394 13.1201 2.07394 12.9661V4.13392C2.07394 3.89633 2.30438 3.72691 2.53116 3.79778L8.16594 5.55865C8.31138 5.6041 8.4109 5.73783 8.41303 5.88981ZM9.58698 15.206V5.89479C9.58698 5.89313 9.58698 5.89147 9.58697 5.88981C9.5891 5.73782 9.68863 5.6041 9.83407 5.55865L15.4688 3.79778C15.6956 3.72691 15.9261 3.89633 15.9261 4.13392V12.9661C15.9261 13.1201 15.826 13.2563 15.6789 13.3022L9.58698 15.206ZM9.58698 4.40596V4.23982C10.292 4.03492 11.0842 3.77955 11.789 3.55238L12.0325 3.47393C12.4894 3.32684 12.8964 3.197 13.2117 3.10399C13.3697 3.05739 13.4979 3.02205 13.5942 2.99883C13.6414 2.98745 13.6724 2.9812 13.6903 2.97779C13.6959 2.97928 13.7027 2.98117 13.7107 2.98353C13.7568 2.99725 13.82 3.02012 13.8993 3.05326C13.9017 3.05423 13.904 3.0552 13.9063 3.05618L9.58698 4.40596ZM6.21107 3.55238C6.91582 3.77955 7.70807 4.03492 8.41307 4.23982V4.40598L4.09373 3.05618L4.1007 3.05326C4.18003 3.02012 4.24321 2.99725 4.28938 2.98353C4.29734 2.98117 4.3041 2.97928 4.30975 2.97779C4.3277 2.9812 4.35863 2.98745 4.40586 2.99883C4.50217 3.02205 4.63038 3.05739 4.78835 3.10399C5.10362 3.197 5.51062 3.32684 5.96757 3.47393L6.21107 3.55238Z"
+                      fill="currentColor"
+                    ></path></svg
+                  >Tutorials</a
+                >
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2"></div>
+                <div class="flex shrink-0 gap-2 flex-nowrap items-center">
+                  <span data-state="closed"
+                    ><button
+                      class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled] px-[5px] py-[5px]"
+                      type="button"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-icon="searchsolid"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.19999 3.6C5.21176 3.6 3.59999 5.21178 3.59999 7.2C3.59999 9.18823 5.21176 10.8 7.19999 10.8C9.18821 10.8 10.8 9.18823 10.8 7.2C10.8 5.21178 9.18821 3.6 7.19999 3.6ZM1.79999 7.2C1.79999 4.21767 4.21765 1.8 7.19999 1.8C10.1823 1.8 12.6 4.21767 12.6 7.2C12.6 8.36625 12.2303 9.44615 11.6017 10.3289L15.9364 14.6636C16.2879 15.0151 16.2879 15.5849 15.9364 15.9364C15.5849 16.2879 15.0151 16.2879 14.6636 15.9364L10.3289 11.6017C9.44613 12.2303 8.36623 12.6 7.19999 12.6C4.21765 12.6 1.79999 10.1823 1.79999 7.2Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg></button></span
+                  ><a
+                    class="transition-none relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled] px-[5px] py-[5px]"
+                    data-testid="navbar-settings"
+                    href="https://app.usemotion.com/web/settings"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-icon="cogsolid"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.3403 2.85384C9.99917 1.44871 8.00081 1.44871 7.65969 2.85383C7.43933 3.76153 6.39939 4.19229 5.60174 3.70627C4.36695 2.9539 2.9539 4.36695 3.70627 5.60174C4.19229 6.39939 3.76153 7.43933 2.85383 7.65969C1.44871 8.00081 1.44871 9.99917 2.85384 10.3403C3.76153 10.5606 4.19229 11.6006 3.70627 12.3982C2.9539 13.633 4.36695 15.0461 5.60174 14.2937C6.39939 13.8077 7.43933 14.2384 7.65969 15.1461C8.00081 16.5513 9.99917 16.5513 10.3403 15.1461C10.5606 14.2384 11.6006 13.8077 12.3982 14.2937C13.633 15.0461 15.0461 13.633 14.2937 12.3982C13.8077 11.6006 14.2384 10.5606 15.1461 10.3403C16.5513 9.99917 16.5513 8.00081 15.1461 7.65969C14.2384 7.43933 13.8077 6.39939 14.2937 5.60174C15.0461 4.36695 13.633 2.9539 12.3982 3.70627C11.6006 4.19229 10.5606 3.76153 10.3403 2.85384ZM8.99999 11.7C10.4912 11.7 11.7 10.4912 11.7 8.99999C11.7 7.50882 10.4912 6.29999 8.99999 6.29999C7.50882 6.29999 6.29999 7.50882 6.29999 8.99999C6.29999 10.4912 7.50882 11.7 8.99999 11.7Z"
+                        fill="currentColor"
+                      ></path></svg></a
+                  ><button
+                    class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled] px-[5px] py-[5px]"
+                    type="button"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-icon="questionmarkcirclesolid"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.2 8.99999C16.2 12.9764 12.9764 16.2 9 16.2C5.02355 16.2 1.8 12.9764 1.8 8.99999C1.8 5.02354 5.02355 1.79999 9 1.79999C12.9764 1.79999 16.2 5.02354 16.2 8.99999ZM9.00001 6.29999C8.66802 6.29999 8.37684 6.47928 8.21986 6.75064C7.97098 7.1809 7.42042 7.32792 6.99017 7.07903C6.55991 6.83014 6.41289 6.27959 6.66177 5.84933C7.12726 5.04465 7.9995 4.49999 9.00001 4.49999C10.4912 4.49999 11.7 5.70882 11.7 7.19999C11.7 8.37558 10.9487 9.3757 9.90001 9.74635V9.89999C9.90001 10.397 9.49707 10.8 9.00001 10.8C8.50296 10.8 8.10001 10.397 8.10001 9.89999V8.99999C8.10001 8.50293 8.50296 8.09999 9.00001 8.09999C9.49707 8.09999 9.90001 7.69704 9.90001 7.19999C9.90001 6.70293 9.49707 6.29999 9.00001 6.29999ZM9 13.5C9.49706 13.5 9.9 13.097 9.9 12.6C9.9 12.1029 9.49706 11.7 9 11.7C8.50294 11.7 8.1 12.1029 8.1 12.6C8.1 13.097 8.50294 13.5 9 13.5Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg></button
+                  ><button
+                    class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-bg=transparent] setvar-[b-bg-disabled=transparent] setvar-[b-gap=6px] text-sm px-[11px] py-[7px] [&amp;_[data-icon]]:w-5 [&amp;_[data-icon]]:h-5 themevar-[b-fg=button-neutral-muted-text-default] themevar-[b-icon=button-neutral-muted-icon-default] themevar-[b-bg-hover=button-neutral-muted-bg-hover] themevar-[b-bg-active=button-neutral-muted-bg-pressed] themevar-[b-fg-disabled=button-neutral-muted-text-disabled] themevar-[b-icon-disabled=button-neutral-muted-icon-disabled]"
+                    type="button"
+                    data-testid="user-account-link"
+                  >
+                    <div class="relative shrink-0">
+                      <div
+                        class="shrink-0 flex items-center justify-center rounded-full !text-primitives-global-white font-bold tracking-[-0.25px] bg-avatar-empty-bg overflow-hidden relative uppercase [&amp;&gt;[data-icon]]:text-avatar-empty-icon"
+                        data-icon="avatar-pill"
+                        style="
+                          background-color: rgb(121, 87, 253);
+                          width: 24px;
+                          height: 24px;
+                          font-size: 12px;
+                        "
+                      >
+                        <img
+                          class="h-full w-full object-cover"
+                          src="./pm_files/picture"
+                          alt=""
+                          role="presentation"
+                        />
+                      </div>
+                      <div
+                        class="absolute rounded-full grid place-items-center [&amp;&gt;*]:w-full [&amp;&gt;*]:h-full [&amp;_[data-icon]]:w-full [&amp;_[data-icon]]:h-full -right-[var(--xoffset)] -bottom-[var(--yoffset)] bg-white"
+                        style="
+                          width: 12px;
+                          height: 12px;
+                          --xoffset: 5%;
+                          --yoffset: 5%;
+                        "
+                      >
+                        <svg
+                          preserveAspectRatio="xMidYMid"
+                          viewBox="0 0 256 262"
+                          data-icon="googlelogo"
+                          width="24"
+                          height="24"
+                          class="p-[1.5px]"
+                        >
+                          <path
+                            d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                            fill="#4285F4"
+                          ></path>
+                          <path
+                            d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                            fill="#34A853"
+                          ></path>
+                          <path
+                            d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                            fill="#FBBC05"
+                          ></path>
+                          <path
+                            d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                            fill="#EB4335"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="hidden text-semantic-neutral-text-subtle font-semibold truncate flex-col ml-1.5 2xl:flex"
+                    >
+                      <span class="text-xs text-left">danielmark0103</span
+                      ><span class="text-[10px] leading-3 text-left"
+                        >@gmail.com</span
+                      >
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="px-3 flex items-center w-[248px] h-full">
+              <div
+                class="border border-semantic-neutral-border-subtle rounded bg-semantic-neutral-bg-subtle flex h-auto w-full items-center justify-between gap-0.5 px-2 py-0.5"
+              >
+                <div class="flex flex-col gap-0.5 overflow-hidden min-w-0">
+                  <span
+                    class="max-w-full truncate font-semibold text-xs text-semantic-neutral-text-default"
+                    >Lunch</span
+                  ><span
+                    class="max-w-full truncate text-[10px] text-semantic-neutral-text-subtle"
+                    >11:45 AM - 12:15 PM</span
+                  >
+                </div>
+                <div class="flex items-center gap-1">
+                  <span data-state="closed"
+                    ><button
+                      class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-gap=6px] text-xs [&amp;_[data-icon]]:w-4 [&amp;_[data-icon]]:h-4 themevar-[b-fg=button-neutral-outlined-text-default] themevar-[b-bg=button-neutral-outlined-bg-default] themevar-[b-icon=button-neutral-outlined-icon-default] themevar-[b-border=button-neutral-outlined-border-default] themevar-[b-bg-hover=button-neutral-outlined-bg-hover] themevar-[b-border-hover=button-neutral-outlined-border-hover] themevar-[b-bg-active=button-neutral-outlined-bg-pressed] themevar-[b-border-active=button-neutral-outlined-border-pressed] themevar-[b-fg-disabled=button-neutral-outlined-text-disabled] themevar-[b-bg-disabled=button-neutral-outlined-bg-disabled] themevar-[b-icon-disabled=button-neutral-outlined-icon-disabled] themevar-[b-border-disabled=button-neutral-outlined-border-disabled] px-[3px] py-[3px]"
+                      type="button"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-icon="pencilsolid"
+                      >
+                        <path
+                          d="M12.2272 3.22722C12.9302 2.52428 14.0699 2.52428 14.7728 3.22722C15.4757 3.93016 15.4757 5.06986 14.7728 5.7728L14.0592 6.48641L11.5136 3.94082L12.2272 3.22722Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M10.2408 5.21362L2.70001 12.7544V15.3H5.24559L12.7864 7.7592L10.2408 5.21362Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg></button></span
+                  ><span data-state="closed"
+                    ><button
+                      class="relative inline-flex items-center justify-center rounded font-semibold box-border border border-solid gap-[var(--b-gap)] bg-[var(--b-bg)] text-[var(--b-fg)] border-[var(--b-border,var(--b-bg))] [&amp;_[data-icon]]:text-[var(--b-icon,var(--b-fg))] [&amp;_[data-icon]]:shrink-0 hover:text-[var(--b-fg-hover,var(--b-fg))] hover:bg-[var(--b-bg-hover,var(--b-bg))] hover:border-[var(--b-border-hover,var(--b-bg-hover))] [&amp;:enabled:hover_[data-icon]]:text-[var(--b-icon-hover,var(--b-icon))] active:bg-[var(--b-bg-active,var(--b-bg))] active:border-[var(--b-border-active,var(--b-bg-active))] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-button-primary-solid-border-focus disabled:cursor-not-allowed disabled:text-[var(--b-fg-disabled,var(--b-fg))] disabled:bg-[var(--b-bg-disabled,var(--b-bg))] disabled:border-[var(--b-border-disabled,var(--b-bg-disabled))] [&amp;:disabled_[data-icon]]:text-[var(--b-icon-disabled,var(--b-fg-disabled,var(--b-fg)))] setvar-[b-gap=6px] text-xs [&amp;_[data-icon]]:w-4 [&amp;_[data-icon]]:h-4 themevar-[b-fg=button-primary-solid-text-default] themevar-[b-bg=button-primary-solid-bg-default] themevar-[b-icon=button-primary-solid-icon-default] themevar-[b-bg-hover=button-primary-solid-bg-hover] themevar-[b-bg-active=button-primary-solid-bg-pressed] themevar-[b-bg-disabled=button-primary-solid-bg-disabled] themevar-[b-fg-disabled=button-primary-solid-text-disabled] themevar-[b-icon-disabled=button-primary-solid-icon-disabled] themevar-[b-border-disabled=button-primary-solid-border-disabled] px-[3px] py-[3px]"
+                      type="button"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-icon="playsolid"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.99999 16.2C12.9764 16.2 16.2 12.9765 16.2 9C16.2 5.02355 12.9764 1.8 8.99999 1.8C5.02354 1.8 1.79999 5.02355 1.79999 9C1.79999 12.9765 5.02354 16.2 8.99999 16.2ZM8.59922 6.45116C8.32305 6.26705 7.96796 6.24988 7.67532 6.4065C7.38267 6.56311 7.19999 6.86809 7.19999 7.2V10.8C7.19999 11.1319 7.38267 11.4369 7.67532 11.5935C7.96796 11.7501 8.32305 11.733 8.59922 11.5489L11.2992 9.74885C11.5496 9.58193 11.7 9.30092 11.7 9C11.7 8.69909 11.5496 8.41808 11.2992 8.25116L8.59922 6.45116Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg></button
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="flex flex-col gap-2 h-full min-h-0">
+            <div class="relative h-full w-screen bg-container-bg">
+              <div class="lg:mt-12 h-full w-full">
+                <div class="mt-4 flex lg:h-full lg:mt-0">
+                  <div
+                    class="px-6 lg:px-0 flex flex-1 lg:-translate-y-16 flex-col items-center lg:justify-center"
+                  >
+                    <div class="lg:w-[400px]">
+                      <div class="flex flex-row items-center gap-2 mb-3">
+                        <div
+                          class="h-[8px] w-[77px] rounded-full bg-semantic-neutral-border-focus"
+                        ></div>
+                        <div
+                          class="h-[8px] w-[77px] rounded-full bg-semantic-neutral-border-strong"
+                        ></div>
+                        <div
+                          class="h-[8px] w-[77px] rounded-full bg-semantic-neutral-border-strong"
+                        ></div>
+                      </div>
+                      <h1
+                        class="text-lg lg:text-[28px] lg:leading-normal font-semibold select-none text-semantic-neutral-text-default"
+                      >
+                        Create your first workspace
+                      </h1>
+                      <p
+                        class="text-semantic-neutral-text-subtle mt-4 text-base"
+                      >
+                        A workspace is a space where you can organize your tasks
+                        and projects individually or with a team.
+                      </p>
+                      <div class="mt-4">
+                        <div class="">
+                          <label class=""
+                            ><span
+                              class="text-semantic-neutral-text-subtle text-xs mb-1.5"
+                            ></span
+                            ><span
+                              class="flex items-center justify-between h-full gap-2 px-2 border border-field-border-default bg-field-bg-default [&amp;_[data-icon]]:text-field-icon-default [&amp;_[data-icon]]:shrink-0 cursor-text text-sm py-1.5 [&amp;_[data-icon]]:w-[18px] [&amp;_[data-icon]]:h-[18px] rounded"
+                              data-size="normal"
+                              ><input
+                                class="outline-none bg-transparent w-full h-full text-field-text-default text-base lg:[[data-size=xsmall]_&amp;]:text-2xs lg:[[data-size=small]_&amp;]:text-xs lg:[[data-size=normal]_&amp;]:text-sm disabled:text-field-text-disabled disabled:cursor-not-allowed"
+                                name="textinput_search"
+                                autocomplete="off"
+                                placeholder="Enter workspace name"
+                                value="" /></span
+                          ></label>
+                        </div>
+                        <div class="mt-4 flex justify-end">
+                          <button
+                            class="relative cursor-pointer rounded border font-normal enabled:focus:outline-2 disabled:cursor-not-allowed disabled:opacity-40 text-sm px-3 py-1.5 border-transparent bg-primary-400 enabled:focus:outline-none enabled:focus:outline-offset-0 enabled:focus-visible:outline-primary-200 enabled:active:outline-primary-200 enabled:hover:bg-primary-600 text-dark-100 w-full lg:w-auto"
+                            disabled=""
+                            type="button"
+                          >
+                            <div class="flex items-center gap-2 justify-center">
+                              <span class="font-semibold text-inherit"
+                                >Next</span
+                              >
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h-full flex-[1.2_1.2_0%] hidden lg:flex">
+                    <div
+                      class="border-list-card-border-default border-r-none h-full flex-1 rounded-tl-lg rounded-bl-lg border bg-list-card-bg-default"
+                    >
+                      <div
+                        class="relative flex h-11 items-center px-3 border-b border-semantic-neutral-border-subtle"
+                      >
+                        <div
+                          class="absolute left-0 top-0 bottom-0 flex -translate-x-6 items-center"
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-icon="arrowrightsolid"
+                            class="text-semantic-neutral-icon-default h-4 w-4"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M9.2636 2.96362C9.61508 2.61214 10.1849 2.61214 10.5364 2.96362L15.9364 8.36362C16.2879 8.71509 16.2879 9.28494 15.9364 9.63641L10.5364 15.0364C10.1849 15.3879 9.61508 15.3879 9.2636 15.0364C8.91213 14.6849 8.91213 14.1151 9.2636 13.7636L13.1272 9.90001L2.7 9.90001C2.20294 9.90001 1.8 9.49707 1.8 9.00001C1.8 8.50296 2.20294 8.10001 2.7 8.10001H13.1272L9.2636 4.23641C8.91213 3.88494 8.91213 3.31509 9.2636 2.96362Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div
+                          class="bg-semantic-neutral-border-subtle h-4 w-[150px] rounded-lg"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-semantic-neutral-bg-disabled relative px-3 h-9 flex items-center border-b border-semantic-neutral-border-subtle"
+                      >
+                        <div
+                          class="bg-semantic-neutral-bg-active-default h-2.5 w-[72px] rounded-lg"
+                        ></div>
+                      </div>
+                      <div class="relative">
+                        <table class="min-w-full divide-y">
+                          <thead class="relative">
+                            <tr class="h-6">
+                              <th
+                                scope="col"
+                                class="text-semantic-neutral-text-subtle border-semantic-neutral-border-subtle border-r px-3 text-left text-[10px] font-medium"
+                              >
+                                Name
+                              </th>
+                              <th
+                                scope="col"
+                                class="text-semantic-neutral-text-subtle border-semantic-neutral-border-subtle border-r px-3 text-left text-[10px] font-medium"
+                              >
+                                Duration
+                              </th>
+                              <th
+                                scope="col"
+                                class="text-semantic-neutral-text-subtle px-3 text-left text-[10px] font-medium"
+                              >
+                                Deadline
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody class="">
+                            <tr class="h-8">
+                              <td
+                                class="text-light-1100 border-semantic-neutral-border-subtle w-2/3 max-w-[480px] overflow-hidden border border-l-0 px-3"
+                              >
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="bg-semantic-neutral-bg-active-default h-[10px] w-[100px] rounded-lg"
+                                  ></div>
+                                </div>
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle w-[150px] border text-xs"
+                              >
+                                <span
+                                  class="block max-w-[150px] overflow-hidden text-ellipsis whitespace-nowrap px-3"
+                                  data-state="closed"
+                                  >30 min</span
+                                >
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle whitespace-nowrap border border-r-0 text-xs"
+                              >
+                                <span class="py-2 px-3 font-normal"
+                                  >Oct 04, 2024</span
+                                >
+                              </td>
+                            </tr>
+                            <tr class="h-8">
+                              <td
+                                class="text-light-1100 border-semantic-neutral-border-subtle w-2/3 max-w-[480px] overflow-hidden border border-l-0 px-3"
+                              >
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="bg-semantic-neutral-bg-active-default h-[10px] w-[100px] rounded-lg"
+                                  ></div>
+                                </div>
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle w-[150px] border text-xs"
+                              >
+                                <span
+                                  class="block max-w-[150px] overflow-hidden text-ellipsis whitespace-nowrap px-3"
+                                  data-state="closed"
+                                  >30 min</span
+                                >
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle whitespace-nowrap border border-r-0 text-xs"
+                              >
+                                <span class="py-2 px-3 font-normal"
+                                  >Oct 04, 2024</span
+                                >
+                              </td>
+                            </tr>
+                            <tr class="h-8">
+                              <td
+                                class="text-light-1100 border-semantic-neutral-border-subtle w-2/3 max-w-[480px] overflow-hidden border border-l-0 px-3"
+                              >
+                                <div class="flex items-center gap-3">
+                                  <div
+                                    class="bg-semantic-neutral-bg-active-default h-[10px] w-[100px] rounded-lg"
+                                  ></div>
+                                </div>
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle w-[150px] border text-xs"
+                              >
+                                <span
+                                  class="block max-w-[150px] overflow-hidden text-ellipsis whitespace-nowrap px-3"
+                                  data-state="closed"
+                                  >30 min</span
+                                >
+                              </td>
+                              <td
+                                class="text-semantic-neutral-text-default border-semantic-neutral-border-subtle whitespace-nowrap border border-r-0 text-xs"
+                              >
+                                <span class="py-2 px-3 font-normal"
+                                  >Oct 04, 2024</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div class="fixed bottom-6 right-6 flex"></div>
+          <div class="fixed bottom-6 right-6 flex"></div>
+          <div class="fixed bottom-6 right-6 flex"></div>
+          <div class="fixed bottom-6 right-6 flex"></div>
+        </div>
+      </div>
+    </div>
+    <script id="initial-loading-script">
+      const listener = (e) => {
+        if (e.animationName !== "static-loading-spin") return;
+        const animation = document
+          .getAnimations()
+          .find((x) => x.animationName === "static-loading-spin");
+        window._animationSync = animation.startTime;
+        document.removeEventListener("animationstart", listener);
+      };
+
+      document.addEventListener("animationstart", listener, true);
+
+      setTimeout(() => {
+        const el = document.getElementById("initial-loading");
+        if (el == null) return;
+        el.style.display = "flex";
+      }, 1000);
+    </script>
+    <script>
+      const path = window.location.pathname;
+      if (path.startsWith("/web") || path === "/") {
+        let theme = window.localStorage.getItem("theme") ?? "light";
+        if (theme === "systemSettings") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        if (theme === "dark") {
+          document.body.classList.add(theme);
+        }
+      }
+    </script>
+
+    <iframe
+      id="intercom-frame"
+      style="
+        position: absolute !important;
+        opacity: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        top: 0 !important;
+        left: 0 !important;
+        border: none !important;
+        display: block !important;
+        z-index: -1 !important;
+        pointer-events: none;
+      "
+      aria-hidden="true"
+      tabindex="-1"
+      title="Intercom"
+      src="./pm_files/saved_resource.html"
+    ></iframe>
+    <div
+      role="region"
+      aria-label="Notifications (F8)"
+      tabindex="-1"
+      style="pointer-events: none"
+    >
+      <ol
+        tabindex="-1"
+        id="toast-viewport"
+        class="fixed bottom-0 left-0 p-6"
+        style="z-index: 50"
+      ></ol>
+    </div>
+    <div class="intercom-lightweight-app">
+      <style id="intercom-lightweight-app-style" type="text/css">
+        @keyframes intercom-lightweight-app-launcher {
+          from {
+            opacity: 0;
+            transform: scale(0.5);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes intercom-lightweight-app-gradient {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes intercom-lightweight-app-messenger {
+          0% {
+            opacity: 0;
+            transform: scale(0);
+          }
+          40% {
+            opacity: 1;
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        .intercom-lightweight-app {
+          position: fixed;
+          z-index: 2147483001;
+          width: 0;
+          height: 0;
+          font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji",
+            Helvetica, Arial, sans-serif;
+        }
+
+        .intercom-lightweight-app-gradient {
+          position: fixed;
+          z-index: 2147483002;
+          width: 500px;
+          height: 500px;
+          bottom: 0;
+          right: 0;
+          pointer-events: none;
+          background: radial-gradient(
+            ellipse at bottom right,
+            rgba(29, 39, 54, 0.16) 0%,
+            rgba(29, 39, 54, 0) 72%
+          );
+          animation: intercom-lightweight-app-gradient 200ms ease-out;
+        }
+
+        .intercom-lightweight-app-launcher {
+          position: fixed;
+          z-index: 2147483003;
+          padding: 0 !important;
+          margin: 0 !important;
+          border: none;
+          bottom: 20px;
+          right: 20px;
+          max-width: 48px;
+          width: 48px;
+          max-height: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background: #0c0d0d;
+          cursor: pointer;
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06),
+            0 2px 32px 0 rgba(0, 0, 0, 0.16);
+          transition: transform 167ms cubic-bezier(0.33, 0, 0, 1);
+          box-sizing: content-box;
+        }
+
+        .intercom-lightweight-app-launcher:hover {
+          transition: transform 250ms cubic-bezier(0.33, 0, 0, 1);
+          transform: scale(1.1);
+        }
+
+        .intercom-lightweight-app-launcher:active {
+          transform: scale(0.85);
+          transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+        }
+
+        .intercom-lightweight-app-launcher:focus {
+          outline: none;
+        }
+
+        .intercom-lightweight-app-launcher-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 48px;
+          height: 48px;
+          transition: transform 100ms linear, opacity 80ms linear;
+        }
+
+        .intercom-lightweight-app-launcher-icon-open {
+          opacity: 1;
+          transform: rotate(0deg) scale(1);
+        }
+
+        .intercom-lightweight-app-launcher-icon-open svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        .intercom-lightweight-app-launcher-icon-open svg path {
+          fill: rgb(255, 255, 255);
+        }
+
+        .intercom-lightweight-app-launcher-icon-self-serve {
+          opacity: 1;
+          transform: rotate(0deg) scale(1);
+        }
+
+        .intercom-lightweight-app-launcher-icon-self-serve svg {
+          height: 44px;
+        }
+
+        .intercom-lightweight-app-launcher-icon-self-serve svg path {
+          fill: rgb(255, 255, 255);
+        }
+
+        .intercom-lightweight-app-launcher-custom-icon-open {
+          max-height: 24px;
+          max-width: 24px;
+
+          opacity: 1;
+          transform: rotate(0deg) scale(1);
+        }
+
+        .intercom-lightweight-app-launcher-icon-minimize {
+          opacity: 0;
+          transform: rotate(-60deg) scale(0);
+        }
+
+        .intercom-lightweight-app-launcher-icon-minimize svg path {
+          fill: rgb(255, 255, 255);
+        }
+
+        .intercom-lightweight-app-messenger {
+          position: fixed;
+          z-index: 2147483003;
+          overflow: hidden;
+          background-color: white;
+          animation: intercom-lightweight-app-messenger 250ms
+            cubic-bezier(0, 1, 1, 1);
+          transform-origin: bottom right;
+
+          width: 400px;
+          height: calc(100% - 40px);
+          max-height: 704px;
+          min-height: 250px;
+          right: 20px;
+          bottom: 20px;
+          box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+
+          border-radius: 16px;
+        }
+
+        .intercom-lightweight-app-messenger-header {
+          height: 64px;
+          border-bottom: none;
+          background: #ffffff;
+        }
+
+        .intercom-lightweight-app-messenger-footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 80px;
+          background: #fff;
+          font-size: 14px;
+          line-height: 21px;
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        @media print {
+          .intercom-lightweight-app {
+            display: none;
+          }
+        }
+      </style>
+    </div>
+    <iframe
+      name="__privateStripeMetricsController7260"
+      frameborder="0"
+      allowtransparency="true"
+      scrolling="no"
+      role="presentation"
+      allow="payment *"
+      src="./pm_files/m-outer-3437aaddcdf6922d623e172c2d6f9278.html"
+      aria-hidden="true"
+      tabindex="-1"
+      style="
+        border: none !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 1px !important;
+        min-width: 100% !important;
+        overflow: hidden !important;
+        display: block !important;
+        visibility: hidden !important;
+        position: fixed !important;
+        height: 1px !important;
+        pointer-events: none !important;
+        user-select: none !important;
+      "
+    ></iframe>
+  </body>
+</html>
