@@ -15,9 +15,9 @@ Calendarify, building the next-generation productivity platform that uses artifi
 
 - 📌 **Event Categories**: Categorize events for better organization (e.g., Work, Personal, Meetings).
 
-## Technologies Used
+## Tech Stack
 - **Frontend**: React, JavaScript, HTML, CSS
-- **Backend**: Node.js, Express
+- **Backend**: Node.js, JavaScript
 - **Database**: MongoDB
 - **Styling**: Tailwind CSS
 - **Other**: FullCalendar library for the calendar UI
